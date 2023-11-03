@@ -48,7 +48,23 @@ function init() {
       // destructure data into four variables
       const { logoText, textColor, shape, shapeColor } = data;
 
-      writeToFile(filename, data, shape)
+      const filename = `./examples/${shape}.svg`;
+
+      console.log(data);
+
+      // switch to check type of shape
+      if (shape === "Circle") {
+        let circle = new Circle(logoText, textColor, shapeColor);
+        var svg = circle.render();
+      } else if (shape === "Triangle") {
+        let triangle = new Triangle(logoText, textColor, shapeColor);
+        var svg = triangle.render();
+      } else if (shape === "Square") {
+        let square = new Square(logoText, textColor, shapeColor);
+        var svg = square.render();
+      }
+
+      writeToFile(filename, svg, shape)
   });
 }
 
