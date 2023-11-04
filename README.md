@@ -31,6 +31,8 @@ Start by running the index.js file. You will be prompted with what you would lik
 
 If you want to run your own local instance, follow the installation instructions included in this document.
 
+## Tutorial Video
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ### Prerequisites 📂
 You will need `node` installed on your computer in order to run this app.
